@@ -5,8 +5,8 @@ using UnityEngine;
 public class movement : MonoBehaviour
 {
 
-    public Vector2 speed = new Vector2(3, 3);
-    public Vector2 jumpHeight = new Vector2 (3, 3);
+    public Vector2 speed = new Vector2(5, 0);
+    public Vector2 jumpHeight = new Vector2 (0, 10);
     bool isGrounded;
     public LayerMask mask;
     public float maxDistance;

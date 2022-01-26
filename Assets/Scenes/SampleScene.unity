@@ -763,7 +763,7 @@ MonoBehaviour:
   mask:
     serializedVersion: 2
     m_Bits: 4294967295
-  maxDistance: 5
+  maxDistance: 0.6
 --- !u!61 &853879045
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1818,7 +1818,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dcc6d82f728b8c4687f77781ceccaa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winScreen: {fileID: 0}
+  winScreen: {fileID: 867828882}
 --- !u!212 &1439525305
 SpriteRenderer:
   m_ObjectHideFlags: 0
