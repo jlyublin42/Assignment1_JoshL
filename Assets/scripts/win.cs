@@ -12,6 +12,7 @@ public class win : MonoBehaviour
     {
         if(otherObject.tag == "player")
         {
+            Time.timeScale = 0.0f;
             winScreen.SetActive(true);
 
         }

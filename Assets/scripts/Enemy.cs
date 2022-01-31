@@ -6,11 +6,13 @@ using UnityEngine.SceneManagement;
 public class Enemy : MonoBehaviour
 {
     public int health = 1;
+    public GameObject deathParticle;
     public void takeDamage(int damage)
     {
         health -= damage;
         if(health <= 0)
         {
+            Instantiate(deathParticle, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }
@@ -19,7 +21,7 @@ public class Enemy : MonoBehaviour
     {
         if(otherObject.tag == "player")
         {
-            Time.timeScale = 0.0f;
+            Instantiate(deathParticle, transform.position, Quaternion.identity);
 
             LoadScene("gameOver");
         }
